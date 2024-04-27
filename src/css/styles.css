@@ -8,7 +8,9 @@
 @import url('./header.css');
 @import url('./logo-section.css');
 @import url('./second-header.css');
-:root  {
+@import url('./articles-section.css');
+
+:root {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
   font-size: 16px;
   line-height: 24px;
