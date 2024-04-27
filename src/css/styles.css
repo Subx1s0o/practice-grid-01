@@ -7,8 +7,8 @@
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./logo-section.css');
-
-:root {
+@import url('./second-header.css');
+:root  {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
   font-size: 16px;
   line-height: 24px;
