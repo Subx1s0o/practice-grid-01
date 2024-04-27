@@ -45,10 +45,9 @@ fetch(
 )
   .then(response => response.json())
   .then(data => {
-    console.log(data); // Додайте цей рядок для виведення відповіді в консоль
-    const temperatureCelsius = Math.round(data.main.temp - 273.15); // Температура у градусах Цельсія
+    console.log(data);
+    const temperatureCelsius = Math.round(data.main.temp - 273.15);
 
-    // Виведення температури на сторінку
     document.getElementById('temperature').innerHTML = temperatureCelsius;
   })
   .catch(error => {
