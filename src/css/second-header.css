@@ -1,0 +1,145 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  align-items: center;
+  gap: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav {
+  position: relative;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff18;
+  right: 160px;
+}
+
+.second-header {
+  background-color: #393939;
+}
+
+.pages-select {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav form {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.input-search {
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  padding-right: 40px;
+}
+
+.search {
+  position: relative;
+}
+
+.search svg {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  fill: #ffffff31;
+}
+
+.burger {
+  background-color: #fff;
+  display: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.burger svg {
+  fill: transparent;
+  stroke: #000000ab;
+}
+
+@media (max-width: 991px) {
+  .navbar li:nth-child(4),
+  .navbar li:nth-child(6) {
+    display: none;
+  }
+
+  .navbar {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-column: 2 / 3;
+    grid-template-columns: 50px 100px 50px;
+    justify-content: center;
+  }
+
+  .navbar li:nth-child(5),
+  .navbar li:nth-child(9),
+  .navbar li:nth-child(8),
+  .navbar li:nth-child(7) {
+    display: none;
+  }
+
+  .nav form {
+    grid-column: 1 / 2;
+    justify-content: start;
+    grid-row: 1 / 2;
+  }
+
+  .nav {
+    grid-template-columns: 160px 1fr 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3 / 4;
+  }
+  .nav::after {
+    left: 160px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    display: none;
+  }
+}
