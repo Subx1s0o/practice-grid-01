@@ -1,0 +1,89 @@
+.logo-section .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  align-items: center;
+}
+
+.logotype {
+  margin-right: 20px;
+}
+
+.purchase-div {
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  background-image: url('../img/purchase.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchase-text {
+  max-width: 201px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 151%;
+  color: #fff;
+}
+
+.purchase-text span {
+  font-weight: 700;
+}
+
+.action-purchase {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 151%;
+  color: #f65050;
+}
+
+.purchase-div button {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px 20px 9px 20px;
+  background-color: #f65050;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .logo-section .container {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+  .logotype {
+    display: none;
+  }
+
+  .purchase-div button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase-text {
+    max-width: 150px;
+  }
+  .purchase-div button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .purchase-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .purchase-text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
