@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./logo-section.css');
 
 :root {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
