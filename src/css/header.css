@@ -74,7 +74,7 @@ header .container {
 
 .header-ul {
   display: grid;
-  grid-template-columns: 95px 141px minmax(200px, 1fr);
+  grid-template-columns: 95px 141px minmax(190px, 1fr);
   align-items: center;
   gap: 20px;
 }
@@ -108,4 +108,36 @@ header .container {
   grid-template-columns: repeat(4, 24px);
   gap: 10px;
   margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+
+  .header-ul {
+    gap: 10px;
+  }
+
+  .breaking {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .breaking {
+    display: none;
+  }
+  .news {
+    padding: 14px 8px;
+    background-color: #ef5043;
+    color: #fff;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-header {
+    display: none;
+  }
 }
