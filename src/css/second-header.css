@@ -6,8 +6,6 @@
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .nav {
@@ -62,6 +60,8 @@
 
 .search {
   position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .search svg {
@@ -84,6 +84,37 @@
   stroke: #000000ab;
 }
 
+.navbar li a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current {
+  display: block;
+  position: relative;
+  background-color: #f65050;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.current::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 5px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+}
+
 @media (max-width: 991px) {
   .navbar li:nth-child(4),
   .navbar li:nth-child(6) {
@@ -102,6 +133,16 @@
 }
 
 @media (max-width: 768px) {
+  .current {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .navbar {
     grid-column: 2 / 3;
     grid-template-columns: 50px 100px 50px;
@@ -123,8 +164,6 @@
 
   .nav {
     grid-template-columns: 160px 1fr 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 
   .burger {
