@@ -52,7 +52,7 @@
 }
 
 .city {
-  margin-left: 15px;
+  margin-left: 7px;
   font-weight: 500;
 }
 
@@ -167,5 +167,8 @@
   }
   .header-ul {
     grid-template-columns: 1fr;
+  }
+  .city {
+    margin-left: 15px;
   }
 }
