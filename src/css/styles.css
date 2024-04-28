@@ -9,6 +9,7 @@
 @import url('./logo-section.css');
 @import url('./second-header.css');
 @import url('./articles-section.css');
+@import url('./news-section.css');
 
 :root {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
