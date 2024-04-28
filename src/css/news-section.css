@@ -243,12 +243,21 @@
   grid-template-rows: repeat(5, 70px);
 }
 
+.more-svg {
+  padding-top: 3px;
+}
+
 .truncate {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Ограничение на количество отображаемых строк */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.news-tags li:nth-child(9) a {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 991px) {
