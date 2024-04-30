@@ -100,13 +100,36 @@
   gap: 15px 30px;
 }
 
-.news-cards-ul li:nth-child(1) a img {
-  width: 100%;
+.main-card {
+  position: relative;
+  padding: 25px;
+  background: url(../img/news-1desk.jpg) lightgray 50% / cover no-repeat;
+  height: 0; /* Висота 0, щоб встановити відсоткове значення */
+  padding-top: 56.25%; /* Висота відноситься до ширини, 16:9 відношення сторін */
+  /* Приклад пропорційності 16:9: (9 / 16) * 100 = 56.25% */
+}
+
+.news-tag {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 2px;
+  padding: 6px;
+  width: 54px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0088ff;
 }
 
 .news-cards-ul li:nth-child(1) {
   grid-column: 1 / 2;
-  grid-row: 1 / 4;
+  grid-row: 1 / 6;
 }
 
 .news-cards-ul li:nth-child(2) {
@@ -166,7 +189,11 @@
   font-weight: 200;
   font-size: 14px;
   line-height: 111%;
-  margin-top: 20px;
+  margin-top: 10px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: rgba(57, 57, 57, 0.6);
 }
 
@@ -180,13 +207,13 @@
 .news-main {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.2;
   color: #393939;
 }
 
 .news-tag-main {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 6px;
 }
 
@@ -195,7 +222,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .aside-btns button {
@@ -216,7 +244,7 @@
   width: 30%;
   position: absolute;
   height: 1.5px;
-  bottom: -20.5px;
+  bottom: -16px;
   background-color: #f65050;
 }
 
@@ -225,12 +253,12 @@
   width: 70%;
   position: absolute;
   height: 1.5px;
-  bottom: -20.5px;
+  bottom: -16px;
   right: 0;
   background-color: #393939;
 }
 
-.news-cards-right li {
+.news-cards-right li a {
   display: grid;
   grid-template-columns: 70px 1fr;
   gap: 12px;
@@ -249,7 +277,7 @@
 
 .truncate {
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Ограничение на количество отображаемых строк */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -258,6 +286,12 @@
 .news-tags li:nth-child(9) a {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .lorem {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -279,7 +313,7 @@
 
   .news-cards-ul .lorem {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .lorem::after {
@@ -302,6 +336,13 @@
   }
   .news-section .container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .news-tag {
+    top: 15px;
+    left: 15px;
   }
 }
 

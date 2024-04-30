@@ -10,6 +10,7 @@
 @import url('./second-header.css');
 @import url('./articles-section.css');
 @import url('./news-section.css');
+@import url('./entertainment-section.css');
 
 :root {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
@@ -28,7 +29,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;

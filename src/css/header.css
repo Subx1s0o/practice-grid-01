@@ -68,8 +68,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 10px 0 rgba(246, 80, 80, 0.15);
+
   background: #fff;
+}
+
+.first-header {
+  box-shadow: 0 1px 10px 0 rgba(246, 80, 80, 0.15);
 }
 
 .header-ul {
