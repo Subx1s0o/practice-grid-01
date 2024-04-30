@@ -11,7 +11,7 @@
 @import url('./articles-section.css');
 @import url('./news-section.css');
 @import url('./entertainment-section.css');
-
+@import url('./sports-section.css');
 :root {
   font-family: Sofia Sans, Poppins, Lora, Oswald, sans-serif;
   font-size: 16px;

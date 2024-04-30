@@ -52,7 +52,8 @@
 }
 
 .news-tags li a {
-  padding: 5.7px 14px;
+  padding: 2.7px 14px;
+  height: 24px;
 }
 
 .news-tags li:nth-child(1) a {
@@ -85,8 +86,6 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  padding-top: 2px;
-  padding-bottom: 3px;
 }
 
 .news-cards {
@@ -104,9 +103,8 @@
   position: relative;
   padding: 25px;
   background: url(../img/news-1desk.jpg) lightgray 50% / cover no-repeat;
-  height: 0; /* Висота 0, щоб встановити відсоткове значення */
-  padding-top: 56.25%; /* Висота відноситься до ширини, 16:9 відношення сторін */
-  /* Приклад пропорційності 16:9: (9 / 16) * 100 = 56.25% */
+  height: 0;
+  padding-top: 56.25%;
 }
 
 .news-tag {

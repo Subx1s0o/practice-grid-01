@@ -1,0 +1,159 @@
+.arrow-btn1 {
+  display: block;
+  transform: ScaleX(-1);
+  background: rgba(246, 80, 80, 0.6);
+  border: none;
+  height: 24px;
+}
+
+.arrow-btn2 {
+  display: block;
+  background: #f65050;
+  border: none;
+  height: 24px;
+}
+
+.main-card-sports {
+  position: relative;
+  padding: 25px;
+  background: url(../img/sports-6.jpg) lightgray 50% / cover no-repeat;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.sports-header {
+  position: relative;
+}
+
+.sports-header::before {
+  content: '';
+  position: absolute;
+  background-color: #f65050;
+  width: 35%;
+  height: 1px;
+  bottom: -15px;
+}
+
+.sports-header::after {
+  content: '';
+  position: absolute;
+  background-color: #393939;
+  width: 65%;
+  height: 1px;
+  bottom: -15px;
+  right: 0;
+}
+
+.sports-header h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #f65050;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.soc-side-ad {
+  margin-top: 30px;
+}
+
+.soc-side-ad ul {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.soc-side-ad ul li {
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  display: flex;
+  gap: 13px;
+  fill: #fff;
+}
+
+.soc-side-ad ul li p {
+  color: #fff;
+  font-family: 'Sofia Sans';
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 33px;
+}
+
+.soc-side-ad ul li:nth-child(1) {
+  background: #4281ff;
+}
+
+.soc-side-ad ul li:nth-child(2) {
+  background: #c23785;
+}
+
+.soc-side-ad ul li:nth-child(3) {
+  background: #ef5043;
+}
+
+.soc-side-ad ul li:nth-child(4) {
+  background: #42c0f5;
+}
+
+.soc-side-ad ul li:nth-child(5) {
+  background: #19cf65;
+}
+
+.soc-side-ad ul li:nth-child(6) {
+  background: #f7679d;
+}
+
+.ad {
+  margin-top: 25px;
+  position: relative;
+  padding: 122px 122px;
+  background: url(../img/ad.jpg) lightgray 50% / cover no-repeat;
+}
+
+.ad p {
+  position: absolute;
+  color: #fff;
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 650px) {
+  .sports-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .ad {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .soc-side-ad {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-section {
+    grid-template-columns: 1fr;
+  }
+  .ad {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .soc-side-ad {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
