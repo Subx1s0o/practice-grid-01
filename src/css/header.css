@@ -94,7 +94,7 @@
   font-size: 12px;
   font-weight: 500;
   display: grid;
-  grid-template-columns: 16px 1fr;
+  grid-template-columns: 16px 145px;
   align-items: center;
   gap: 5px;
 }
